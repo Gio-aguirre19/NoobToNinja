@@ -1,17 +1,17 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const users = require("./routes/users");
+const favi = require("serve-favicon");
 const app = express();
+const assets = __dirname + "/public";
+const favicon = __dirname + "/public/puzzle.ico";
 
-// Name spacing: will make all urls start with {something}
-// app.use("/{something}", users);
 app
-  // Grabs application json requests
-  .use(bodyParser.json())
-  // Grabs form posts
-  .use(bodyParser.urlencoded({extended: false}))
-  // Uses routes from users page
-  .use(users)
+  .use(express.static(assets))
+  .use(favi(favicon))
+  .get(("/api/profile/"), (req, res) => {
+    var profile = {name: "Gio"};
+
+    res.send(profile);
+  })
 ;
 
-app.listen(3000)
+app.listen(3050)
