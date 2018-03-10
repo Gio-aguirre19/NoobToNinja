@@ -16,10 +16,7 @@ app
       "Another Quote from our glorious leader.",
       "What's in your toilet? The answer may surprise you."
     ];
-    res.render("index", {
-      title: title,
-      tweets: tweets,
-      showTweets: true,
+    res.render("index", { title, tweets, showTweets: true,
       // header file will be header var name when used in hjs
       partials: {header: "header", tweets: "tweets"},
     })

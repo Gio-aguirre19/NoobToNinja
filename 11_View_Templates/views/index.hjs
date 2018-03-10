@@ -6,7 +6,7 @@
   </head>
   <body>
     {{> header}}
-    // Boolean syntax
+    <!-- Boolean syntax -->
     {{#showTweets}}
       {{> tweets}}
     {{/showTweets}}
