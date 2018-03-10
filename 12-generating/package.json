@@ -1,5 +1,5 @@
 {
-  "name": "12-generating-express",
+  "name": "12-generating",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,6 @@
     "express": "~4.15.5",
     "hjs": "~0.0.6",
     "morgan": "~1.9.0",
-    "node-sass-middleware": "0.9.8",
     "serve-favicon": "~2.4.5"
   }
 }

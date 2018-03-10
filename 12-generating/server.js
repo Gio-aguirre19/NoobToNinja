@@ -5,8 +5,7 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('app:production');
-var devDebug = require('debug')('app:dev');
+var debug = require('debug')('12-generating:server');
 var http = require('http');
 
 /**
